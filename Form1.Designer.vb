@@ -22,10 +22,27 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        ListView1 = New ListView()
+        SuspendLayout()
+        ' 
+        ' ListView1
+        ' 
+        ListView1.Location = New Point(263, 111)
+        ListView1.Name = "ListView1"
+        ListView1.Size = New Size(151, 121)
+        ListView1.TabIndex = 0
+        ListView1.UseCompatibleStateImageBehavior = False
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(ListView1)
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
     End Sub
 
+    Friend WithEvents ListView1 As ListView
 End Class
